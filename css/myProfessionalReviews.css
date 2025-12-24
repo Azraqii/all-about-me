@@ -1,0 +1,181 @@
+/* =========================================
+   1. Action Elements (Buttons & Links)
+   ========================================= */
+.download-link {
+    display: inline-block; 
+    background-color: #28a745; 
+    color: white; 
+    padding: 10px 20px; /* Sedikit diperbesar agar lebih mudah diklik */
+    text-decoration: none; 
+    border-radius: 4px;
+    font-weight: 500;
+    margin-top: 10px;
+    transition: background-color 0.2s, transform 0.2s;
+    box-shadow: 0 2px 4px rgba(40, 167, 69, 0.3);
+}
+
+.download-link:hover {
+    background-color: #218838;
+    transform: translateY(-1px);
+}
+
+/* =========================================
+   2. Information Containers
+   ========================================= */
+.prompt-box {
+    background-color: #e6f7ff; 
+    border-left: 5px solid #007bff;
+    padding: 15px 20px;
+    margin: 20px 0;
+    font-size: 0.95rem;
+    color: #333;
+    border-radius: 4px;
+    line-height: 1.6;
+    font-style: italic;
+}
+
+/* Container khusus untuk daftar mahasiswa yang dinilai */
+.reviewed-students {
+    background-color: #f8f9fa; /* Abu-abu sangat muda */
+    border: 1px solid #e9ecef;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 20px 0;
+}
+
+.reviewed-students p strong {
+    color: #007bff;
+}
+
+.student-list {
+    margin-top: 10px;
+    padding-left: 20px;
+    color: #555;
+}
+
+.student-list li {
+    margin-bottom: 8px;
+}
+
+/* =========================================
+   3. Grid Layout (Score Matrix)
+   ========================================= */
+.score-matrix {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); 
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.review-item {
+    padding: 25px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+    background-color: #fff;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.review-item:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+}
+
+.review-item h3 {
+    margin-top: 0;
+    border-bottom: 2px solid #007bff;
+    padding-bottom: 10px;
+    font-size: 1.2rem;
+    color: #007bff;
+}
+
+/* =========================================
+   4. Typography & Details
+   ========================================= */
+.score-details p {
+    margin: 10px 0;
+    font-size: 0.95rem;
+    line-height: 1.5;
+}
+
+.score-details strong {
+    color: #333;
+    font-weight: 600;
+}
+
+.alasan-singkat {
+    font-style: italic;
+    color: #555;
+    border-left: 3px solid #f0ad4e; /* Warna Oranye */
+    padding-left: 12px;
+    margin-left: 0;
+    display: block;
+}
+
+.saran {
+    color: #d9534f; /* Warna Merah */
+    font-weight: 500;
+}
+
+/* =========================================
+   5. Data Tables (Recap)
+   ========================================= */
+.recap-table {
+    width: 60%; /* Sedikit lebih lebar dari 50% agar lebih lega */
+    margin-top: 30px;
+    margin-bottom: 30px;
+    border-collapse: collapse;
+    font-size: 1rem;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+.recap-table th, .recap-table td {
+    border: 1px solid #ccc;
+    padding: 12px;
+    text-align: left;
+}
+
+.recap-table th {
+    background-color: #007bff;
+    color: white;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+    letter-spacing: 0.5px;
+}
+
+.recap-table tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.recap-table tr:hover {
+    background-color: #f1f1f1;
+}
+
+/* =========================================
+   6. Lists (Perbaikan & Refleksi)
+   ========================================= */
+.perbaikan-list {
+    margin-top: 20px;
+    list-style-type: disc;
+    padding-left: 25px;
+    line-height: 1.8;
+}
+
+.perbaikan-list li {
+    color: #444;
+    margin-bottom: 5px;
+}
+
+/* =========================================
+   7. Responsive Adjustments
+   ========================================= */
+@media (max-width: 768px) {
+    .recap-table {
+        width: 100%; /* Tabel menjadi full width di HP */
+    }
+    
+    .prompt-box {
+        margin: 15px 0;
+    }
+}
